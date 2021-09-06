@@ -1,0 +1,2 @@
+standard api url
+/api/v1/product
