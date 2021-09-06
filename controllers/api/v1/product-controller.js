@@ -42,6 +42,7 @@ module.exports.updateProduct=async(req,res)=>{
 module.exports.deleteProduct=async(req,res)=>{
     try{
         const product = await productModel.findByIdAndDelete(req.params.id);
+        res.json(product);
     }
     catch(error){
         console.log("Error in Deleting",res);
